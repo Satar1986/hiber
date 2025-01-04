@@ -20,7 +20,7 @@ public class ClientService {
         clientsDao.delete(client);
     }
 
-    public void updateUser(Client client) {
+    public void updateClient(Client client) {
         clientsDao.update(client);
     }
 

@@ -3,7 +3,10 @@ package utils;
 
 import client.Client;
 import org.hibernate.SessionFactory;
+
+
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
 import org.hibernate.cfg.Configuration;
 
 public class HibernateSessionFactoryUtil {

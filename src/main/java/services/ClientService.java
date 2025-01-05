@@ -3,7 +3,7 @@ import dao.ClientDao;
 import client.Client;
 import java.util.List;
 public class ClientService {
-    private ClientDao clientsDao = new ClientDao();
+    private static ClientDao clientsDao = new ClientDao();
 
     public ClientService() {
     }
@@ -12,7 +12,7 @@ public class ClientService {
         return clientsDao.findById(id);
     }
 
-    public void saveClient(Client client) {
+    public static void saveClient(Client client) {
         clientsDao.save(client);
     }
 

@@ -3,28 +3,28 @@ import dao.ClientDao;
 import client.Client;
 import java.util.List;
 public class ClientService {
-    private static ClientDao clientsDao = new ClientDao();
+    private static ClientDao clientDao = new ClientDao();
 
     public ClientService() {
     }
 
     public Client findClient(int id) {
-        return clientsDao.findById(id);
+        return clientDao.findById(id);
     }
 
-    public static void saveClient(Client client) {
-        clientsDao.save(client);
+    public void saveClient(Client client) {
+        clientDao.save(client);
     }
 
     public void deleteClient(Client client) {
-        clientsDao.delete(client);
+        clientDao.delete(client);
     }
 
     public void updateClient(Client client) {
-        clientsDao.update(client);
+        clientDao.update(client);
     }
 
     public List<Client> findAllClient() {
-        return clientsDao.findAll();
+        return clientDao.findAll();
     }
 }

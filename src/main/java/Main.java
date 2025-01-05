@@ -7,10 +7,11 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
-        ClientService userService = new ClientService();
+        ClientService clientService = new ClientService();
         Client client = new Client("Masha",26);
 
-        ClientService.saveClient(client);
+        clientService.saveClient(client);
+        clientService.updateClient(client);
 
 
     }
